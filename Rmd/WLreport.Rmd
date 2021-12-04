@@ -1,0 +1,29 @@
+---
+title: "Electricity_Production"
+author: "LEI WANG"
+date: "`r format(Sys.Date(),'%Y-%m-%d')`"
+output: html_document
+---
+
+
+# Data summary
+
+This data have the amount of the country Electricity production from renewable sources and the proportion (% in total) of country Electricity production from renewable sources. This analysis shows the trend of Electricity production and its proportion depends on years by three different income groups, High Income, Median Income and Low Income.
+
+# Analysis
+## Plot
+
+![](../figs/fig1.png)
+
+![](../figs/fig2.png)
+
+
+## Result
+We can see high income countries used renewable energy much more than middle and low income countries. And we can see the gap of proportion and amount between high income and middle income countries is not such large at the beginning (from 1970-1980).
+
+However, around 1990, the high income country have a rapid increase, and at this moment, the middle income countries are behind. And in the recent years (2000-2015), high income group have a very soon development in renewable energy. Although middle income group also get a rapid increase around 2010, it is still far behind high income group.
+
+And the low income group started slowly and far behind high income group, which means low income group still heavily rely on traditional resources energy.
+
+
+
