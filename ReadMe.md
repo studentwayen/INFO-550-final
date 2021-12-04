@@ -38,7 +38,7 @@ cd (your path)/INFO-550-final-main
 mkdir ~/docker_output
 
 ## run following code to get into image
-docker run -v ~/docker_output:/project/output -it my_proj 
+docker run -v ~/docker_output:/project/output -it studentwayen/my_proj 
 
 ## go to project file in docker
 cd project
@@ -47,6 +47,8 @@ cd project
 ## you can see the report in the local docker_output file
 make report.html
 
+## There maybe some warning in generating the report
+## It is totally fine, no warries.^_^
 ```
 
 In makefile:
