@@ -11,7 +11,7 @@ For my project, I will analyze two data from World Bank open sources.
 
 Reading two data, one is the amount of the country Electricity production from renewable sources named "namount.csv". And the other one is the proportion (% in total) of country Electricity production from renewable sources named "rapi.csv".
 
-Clone the project to your local repository (Or you can just download it directly):
+Clone the project to your local repository:
 ```
 git clone https://github.com/studentwayen/INFO-550-final.git
 ```
@@ -24,21 +24,20 @@ docker pull studentwayen/my_proj
 ```
 How to build and retrieve the report?
 
-After downloading, you should have a file name INFO-550-final-main. If the file name is different from this, it does not matter. You can just go to the directory of that file (whatever the name is).
-
 Using the following code in your terminal to run my image.
+I use `~` as the root directory in Mac OS. However, in windows, this should be your path.
+And `pwd` will help you to find your location.
 ```
-## go to the directory of that file
-## (may not this file name, but it does not matter)
-cd (your path)/INFO-550-final-main
+## go to the directory of this file
+cd (your path)/INFO-550-final
 
 ## create a local file for mounting the output
-## ~ is your root directory
-## you can use pwd to check your directory.
 mkdir ~/docker_output
+# for windows: mkdir (your path)/docker_ouput
 
 ## run following code to get into image
-docker run -v ~/docker_output:/project/output -it studentwayen/my_proj 
+docker run -v ~/docker_output:/project/output -it my_proj 
+## for windows: docker run -v (your path)/docker_output:/project/output -it my_proj 
 
 ## go to project file in docker
 cd project
@@ -47,10 +46,9 @@ cd project
 ## you can see the report in the local docker_output file
 make report.html
 
-## There maybe some warning in generating the report
-## It is totally fine, no warries.^_^
+## use this to exit
+exit
 ```
-
 In makefile:
 ```
 ## making analysis and report## 
